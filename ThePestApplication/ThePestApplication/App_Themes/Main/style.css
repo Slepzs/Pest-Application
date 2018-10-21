@@ -1,0 +1,236 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Exo');
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Exo', sans-serif;
+}
+
+h1, h2, h3, p, span, div {
+    font-family: 'Exo', sans-serif;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+nav {
+    display: inline-flex;
+    width: 100%;
+}
+
+nav logo {
+    width: 600px;
+
+}
+
+.logo {
+    width: 100%;
+    margin: 20px 25px;
+}
+
+.menu-links {
+    width: 100%;
+}
+
+.menu-links ul {
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+    float: right;
+}
+
+.menu-links ul li {
+        padding: 5px;
+        display: inline-flex;
+        margin: 20px 25px;
+        font-size: 18px;
+        font-family: 'Exo', sans-serif;
+}
+
+.menu-links ul li:hover {
+    color: green;
+    border-bottom: 1px solid green;
+}
+
+.menu-links ul li a {
+    text-decoration: none;
+}
+
+.menu-links ul li a:hover {
+        color: green;
+}
+
+footer {
+    border-top: 2px solid black;
+    width: 100%;
+    height: 90px;
+}
+
+.footer-content {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+.footer-content p {
+   text-align: center;
+   font-family: 'Exo', sans-serif;
+   font-size: 18px;
+}
+
+.show-pest {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.defaultpage {
+    text-align: center;
+}
+.defaultpage h1 {
+    text-transform: uppercase;
+}
+
+
+table, tr, td {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Exo', sans-serif;
+}
+
+table tr {
+    background-color: white;
+}
+
+.show-pest img {
+    width: 250px;
+}
+
+.wrapper {
+    width: 100%;
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.loginform label {
+    text-align: left;
+    width: 200px;
+}
+.loginform {
+    width: 700px;
+    margin: 0 auto;
+    margin: 10px;
+    height: 680px;
+
+}
+input {
+    margin: 10px;
+    padding: 6px 10px;
+}
+input:active {
+        box-shadow: 0 1px 5px 1px #e8e5e5;
+}
+input:focus {
+        box-shadow: 0 1px 5px 1px #e8e5e5;
+}
+.formlabel {
+    width: 150px;
+    margin: 10px;
+    display: inline-block;
+}
+.submitbtn {
+    width: 40%;
+    background-color: transparent;
+    border: 1px solid #c1b3b3;
+    font-family: 'Exo', sans-serif;
+    margin-left: 50px;
+}  
+
+
+/* ==================================
+    Log-in page
+================================= */
+.login {
+    text-align: center;
+}
+.loginbtn {
+    padding: 6px 35px;
+    background-color: #FA0A52;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Exo', sans-serif;
+}
+
+/* ==================================
+    User Requests
+================================= */
+.user_requests {
+    text-align: center;
+}
+.gridcal {
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.btndelete {
+    background-color: transparent;
+    border: 1px solid #c1b3b3;
+    font-family: 'Exo', sans-serif;
+    margin-left: 50px;
+}
+.sendreq {
+    background-color: transparent;
+    border: 1px solid #c1b3b3;
+    font-family: 'Exo', sans-serif;
+    margin-left: 50px;
+}
+
+.sendreq:hover {
+    background-color: forestgreen;
+    color: white;
+}
+.btnupdate:hover {
+    background-color: steelblue;
+    color: white;
+}
+.btndelete:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.btnupdate {
+    background-color: transparent;
+    border: 1px solid #c1b3b3;
+    font-family: 'Exo', sans-serif;
+    margin-left: 50px;
+}
+select {
+    height: 42px;
+    width: 150px!important;
+}
+.user_requests input {
+    margin: 10px;
+    padding: 12px 10px;
+}
+.dateselect {
+    height: 42px!important;
+    width: 150px !important;
+}
+.infomessage{
+    color: dakred;
+    padding: 6px 10px;
+    font-size: 18px;
+    font-weight: 500;
+}

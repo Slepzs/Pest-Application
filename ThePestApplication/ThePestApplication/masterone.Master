@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterone.master.cs" Inherits="ThePestApplication.masterone" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="App_Themes/Main/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            height: 21px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+        <nav>
+            <div class="logo">
+              <a href="Default.aspx" ><img width="450px" src="Pictures/PestPatroLogo@4x.png" alt="Company-Logo Pest Patrol"/></a>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    
+                    <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Login" Value="Login">
+                                <asp:MenuItem NavigateUrl="~/signup.aspx" Text="Sign up" Value="Sign up"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Requests.aspx" Text="Request" Value="Requests">
+                                <asp:MenuItem NavigateUrl="~/pestoverview.aspx" Text="Make Pest" Value="Make Pest"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/user_requests.aspx" Text="Do Request" Value="Do Request"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/logout.aspx" Text="Log out" Value="Log out"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer>
+        <div class="footer-content">
+            <p>@Made By Tobias Heide</p>
+        </div>
+    </footer>
+</body>
+</html>
